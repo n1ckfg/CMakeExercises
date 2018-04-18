@@ -22,7 +22,7 @@ else
     rm -rf "GeographicLib-$GEOGRAPHICLIB_VERSION.tar.gz"
 
     cd "$GEOGRAPHICLIB_DIR"
-    mkdir BUILD
+    mkdir -p BUILD
     cd BUILD
     cmake ..
 
@@ -33,7 +33,7 @@ fi
 
 # return to start dir and build
 cd $DIR
-mkdir BUILD
+mkdir -p BUILD
 cd BUILD
 cmake ..
 make
